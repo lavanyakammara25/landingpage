@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>LAVANYA PORTFOLIO</title>
+    </head>
+    <body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo for t.avif" class="logo">
+                
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Contact</a>
+                
+            </nav> 
+        <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi,I'm LAVANYA</h1>
+    </div>  
+</div>
+</div>
+<!-------------about--------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="photos/image 5.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <P>JFHJ</P>
+                <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                   <p class="tab-links" ocick="opentab('education')">Eduction</p>
+                </div>
+                <div class="tab-cotents active-tab" id="skills"></div>
+                    <ul>
+                        <li><span>web developer</span><br>web app development</li>
+                    </ul>
+                </div>
+            </div class="tab-contents active-tab" id="education" >
+            <ul>
+                <li><span>2024</span></li>
+            </ul>
+            
+        </div>
+        </div>
+    </div>
+</div>
+<!---------------services--------->
+<div id="services">
+    <div
+</div>
+<!------------------contact--------->
+<div id="contact">
+    <div class="cointainer">
+        <div class="row">
+            <div class="contact-left"></div>
+            <h1 class="sub-title">contact me</h1>
+            <p>conatct@example.com</p>
+            <p>0123456789</p>
+            <div class="social-icons">
+                <a href="facebook logo.png"><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-telegram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="Class">Download CV</a>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name"placeholder="your name"required>
+                    <input type="email" name="email"placeholder="your email"required>
+                    <textarea name="message" rows="6"placeholder="your message"></textarea>
+                    <button type="submit">submit</button>                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+     var tablinks = document.getElementByClassName("tab-links")
+     var tabcontents = document.getElementByClassName("tab-contents")
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tancontents){
+            tabcontent.classlist.remove("active-link");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getelementbyid(tabname).claaslist.add("active-tab")
+     }
+</script>
+
+    </body>
+</html>
